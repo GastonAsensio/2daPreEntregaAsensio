@@ -1,11 +1,12 @@
 import './App.css';
-import NavBar from './Components/NavBar';
 import React, { useState, useEffect } from 'react';
 import Card from './Components/Card';
 import Select from './Components/Select';
 import getDog from './API/getDog';
 import Error from './Components/Error';
 import Footer from './Components/Footer';
+import AppRouter from './Components/AppRouter';
+
 
 const initialDog ={
   image:'',
@@ -39,7 +40,7 @@ function App() {
       
   return (
     <>
-    <NavBar/>
+    <AppRouter/>
     <div className='app'>
     <div> <Select updateDog={updateDog}/>
      {error && <Error error = {error}/>}
@@ -47,7 +48,7 @@ function App() {
      </div>
      <Footer/>
      </div>
-     </>
-  );
+    </>
+      );
 }
 export default App;

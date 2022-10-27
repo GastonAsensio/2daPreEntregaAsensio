@@ -10,12 +10,12 @@ const NavBar = () => {
         <div>
       <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">MOREA</Navbar.Brand>
+          <Navbar.Brand exact to="/Home">MOREA</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link to="/home">Home</Nav.Link>
-            <Nav.Link to="/breeds">Breeds</Nav.Link>
-            <Nav.Link to="/#">Contact us</Nav.Link>
-            <Nav.Link to="/"><CartWidget/></Nav.Link>
+            <Nav.Link exact to="/Home">Home</Nav.Link>
+            <Nav.Link exact to="/Breeds">Breeds</Nav.Link>
+            <Nav.Link exact to="/Contact">Contact us</Nav.Link>
+            <CartWidget/>
           </Nav>
         </Container>
       </Navbar>
