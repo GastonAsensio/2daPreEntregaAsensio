@@ -1,9 +1,10 @@
 import React from 'react'
+import '../Stylesheets/CartWidget.css'
 
 const CartWidget = () => {
   return (
     <div className='carrito'>
-      <i className="bi bi-cart"></i>
+     <i class="bi bi-cart2"></i>
     </div>
   )
 }

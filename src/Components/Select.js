@@ -4,12 +4,12 @@ import Error from './Error';
 
 const initialBreeds = [
     {
-        id: 1,
-        name: 'boxer',
+        id: 0,
+        name: '',
     },
     {
-        id: 2,
-        name: 'husky',
+        id: 0,
+        name: '',
     },
 ]
 
@@ -34,7 +34,7 @@ const Select = ( { updateDog } ) => {
     return (
         <>
         <div>
-         <select onChange={(e)=> updateDog(e.taget.value)}>
+         <select onChange={(e)=> updateDog(e.target.value)}>
             {breeds.map((breed) => (
                 <option value={breed.id} key={breed.id}>
                     {breed.name}

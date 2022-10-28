@@ -10,7 +10,7 @@ import NotFoundPage from '../Pages/NotFoundPage';
 const AppRouter = () => {
     return (
         <BrowserRouter>
-        <NavBar/>
+       <NavBar/>
             <Routes>
             <Route exact path='/contact' component={Contact}/>
             <Route exact path='/breeds' component={Breeds}/>
